@@ -769,6 +769,9 @@ box-sizing: border-box;
     .popup-content2 {
         width: 80%;
     }
+    .main-card:hover::after {
+        content: none;
+    }
     .main-box {
         flex-wrap: wrap;
         justify-content: center;
