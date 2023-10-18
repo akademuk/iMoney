@@ -36,7 +36,7 @@ header .wrapper {
     align-items: center;
 }
 body {
-    font-family: 'Inika', serif;
+    font-family: 'Mulish', sans-serif;
 }
 main {
     max-width: 1120px;
@@ -66,7 +66,7 @@ main {
 }
 .main-tittle h2 {
     color: #0047F5;
-    font-family: 'Inika', serif;
+    font-family: 'Mulish', sans-serif;
     font-size: 15px;
     font-style: normal;
     font-weight: 700;
@@ -391,7 +391,7 @@ footer .wrapper {
 }
 .privecy {
     color: #FFF;
-    font-family: 'Inika', serif;
+    font-family: 'Mulish', sans-serif;
     font-size: 10px;
     font-style: normal;
     font-weight: 400;
@@ -403,7 +403,7 @@ footer .wrapper {
 }
 .privecy button {
     color: #FFF;
-    font-family: 'Inika', serif;
+    font-family: 'Mulish', sans-serif;
     font-size: 10px;
     font-style: normal;
     font-weight: 400;
@@ -416,7 +416,7 @@ footer .wrapper {
 }
 .footer-content {
     color: #A6BDF4;
-    font-family: 'Inika', serif;
+    font-family: 'Mulish', sans-serif;
     font-size: 10px;
     font-style: normal;
     font-weight: 400;
@@ -426,7 +426,7 @@ footer .wrapper {
 }
 .footer-content button {
     color: #A6BDF4;
-    font-family: 'Inika', serif;
+    font-family: 'Mulish', sans-serif;
     font-size: 10px;
     font-style: normal;
     font-weight: 400;
@@ -439,6 +439,7 @@ footer .wrapper {
     display: block;
 }
 .logo a {
+    font-family: 'Inika', serif;
     color: #FED425;
     font-size: 25px;
     font-style: normal;
@@ -691,7 +692,7 @@ box-sizing: border-box;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    font-family: 'Inika', serif;
+    font-family: 'Mulish', sans-serif;
   }
   .thank-you-message h2 {
     color: #000;
