@@ -7,7 +7,7 @@
     <link rel="icon" type="image/png" href="img/Favicon_36х36.png">
     <link rel="stylesheet" href="style/star-rating-svg.css">
     <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/style.css">
     <title>iMoney</title>
@@ -63,13 +63,45 @@
         </div>
     </div>
 
+    <div id="popup2" class="popup2">
+    <div class="popup-content2">
+        <span class="close2" id="closePopupBtn2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="36" viewBox="0 0 20 36" fill="none">
+                <path d="M18.8798 26.1822L9.93994 17.561L1.31881 26.5009" stroke="#939496" stroke-width="2" />
+                <path d="M1.0001 8.9399L9.93994 17.561L18.5611 8.62119" stroke="#939496" stroke-width="2" />
+            </svg>
+        </span>
+        <form id="popupForm">
+            <h2>Заблокировать номер:</h2>
+            <h3>Для того чтобы вас исключили из рассылки введите, пожалуйста, свой номер мобильного телефона.</h3>
+            <input type="tel" id="tel" name="tel" placeholder="+38(0хх) ххх-хх-хх" required>
+            <br>
+            <div class="recaptcha">
+                <img src="img/Captcha.png" alt="">
+            </div>
+            <input type="submit" value="Відправити" class="btn-submit">
+        </form>
+        <div id="thankYou" class="thank-you-message">
+           <h2>Успішно!</h2>
+           <p>Терпіння! <br> 
+            Ми отримали ваш номер у роботу <br>
+            і якнайшвидше виключимо його з розсилки.</p>
+        </div>
+    </div>
+    </div>
+
+
 
     <header>
         <div class="wrapper">
             <div class="logo">
                 <a href="#">
-                    <img src="img/Logo.svg" alt="Logo">
+                    <img src="img/Group13.svg" alt="Logo">
+                    Imoney
                 </a>
+                <div class="animation">
+                    <img src="img/Frame.svg" alt="">
+                </div>
             </div>
         </div>
     </header>
@@ -85,6 +117,7 @@
             </div>
             <div class="main-box">
                 <div class="main-card">
+                    
                     <div class="main-card-img">
                         <img src="img/card-img.png" alt="money4you">
                     </div>
@@ -426,7 +459,7 @@
                         сервісом</button>
                 </div>
                 <div class="footer-content">
-                    Якщо ви не бажаєте отримувати розсилку від нас, <button>натисніть тут</button>
+                    Якщо ви не бажаєте отримувати розсилку від нас, <button id="showPopupBtn">натисніть тут</button>
                 </div>
             </div>
         </div>
@@ -439,8 +472,12 @@
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="script/jquery.star-rating-svg.js"></script>
+<script src="script/jquery.maskedinput.min.js"></script>
 
 
+<script>
+    $("#tel").mask("+38(099) 999-99-99");
+</script>
 
 
 <script>
@@ -472,6 +509,24 @@
     // --------------------------------------------------------------------
 </script>
 
+<script>
+    document.getElementById('showPopupBtn').addEventListener('click', function() {
+    document.getElementById('popup2').classList.add('show');
+    document.querySelector('.body').classList.remove('open');
+    });
+
+    document.getElementById('closePopupBtn2').addEventListener('click', function() {
+    document.getElementById('popup2').classList.remove('show');
+    document.querySelector('.body').classList.remove('open');
+    });
+
+    document.getElementById('popupForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    document.getElementById('popupForm').style.display = 'none';
+    document.getElementById('thankYou').style.display = 'flex';
+    });
+
+</script>
 
 
 

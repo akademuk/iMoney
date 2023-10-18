@@ -106,12 +106,16 @@ main {
     height: 99.127px;
     border-radius: 8px;
     overflow: hidden;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .main-card-img img {
     max-width: 100%;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
 }
 .main-content {
     padding: 26px 16px 17px 13px;
@@ -230,10 +234,16 @@ main {
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.8px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
 }
 footer {
     background: #414A61;
     padding-top: 40px;
+    padding-bottom: 100px;
+    box-sizing: border-box;
 }
 .footer-top {
     display: flex;
@@ -428,6 +438,79 @@ footer .wrapper {
     padding: 0;
     display: block;
 }
+.logo a {
+    color: #FED425;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    align-items: flex-start;
+    text-decoration: none;
+    gap: 2px;
+    margin-left: 10px;
+}
+.logo {
+    position: relative;
+}
+.animation {
+    position: absolute;
+    top: 5px;
+    left: -5px;
+    width: 20px;
+    height: 22px;
+}
+@keyframes scaleXAnimation {
+    0% {
+        transform: scaleX(1);
+    }
+    100% {
+        transform: scaleX(-1);
+    }
+}
+
+.animation img {
+    animation: scaleXAnimation 2s ease-in-out infinite alternate;
+}
+.main-card {
+position: relative;
+border-radius: 10px;
+box-sizing: border-box;
+}
+.main-card:hover:after {
+    content: "";
+}
+.main-card::after {
+    content: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-radius: 10px;
+    bottom: 0;
+    border: 2px solid #0047F5;
+    animation: clippath 3s forwards linear;
+  }
+  @keyframes clippath {
+    0%
+   {
+        clip-path: inset(0 0 95% 0);
+       
+    }
+    25% {
+        clip-path: inset(0 0 0 95%);
+       
+    }
+    50% {
+        clip-path: inset(0 0 0 0);
+    }
+    75% {
+        clip-path: inset(0 0 0 0);
+    }
+    100% {
+        clip-path: inset(0 0 0 0);
+    }
+}
 /* Попап */
 .popup {
     display: none;
@@ -506,7 +589,186 @@ footer .wrapper {
 /*---------------------------------------------------------------*/
 
 
+
+
+
+.popup2 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .popup-content2 {
+    max-width: 838px;
+    max-height: 462px;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    background: #F3F6FF;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .popup-content2 h2 {
+    color: #000;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 15px;
+  }
+  .popup-content2 h3 {
+    color: #000;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 30px;
+  }
+  #popupForm {
+    width: 394px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #popupForm input::placeholder {
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  #popupForm input {
+    width: 314px;
+    height: 50px;
+    padding-left: 19px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    background: #FFF;
+    border: none;
+    margin-bottom: 20px;
+  }
+  .recaptcha {
+    width: 314px;
+    height: 46px;
+    background: #F9F9F9;
+    margin-bottom: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .recaptcha img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .btn-submit {
+    width: 313px;
+    height: 42px;
+    text-align: center;
+    border-radius: 5px;
+    background: #0047F5 !important;
+    color: #F3F6FF;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    font-family: 'Inika', serif;
+  }
+  .thank-you-message h2 {
+    color: #000;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 20px;
+  }
+  .thank-you-message p {
+    color: #000;
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .close2 {
+    position: absolute;
+    top: 16px;
+    right: 26px;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .thank-you-message {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .show {
+    display: flex;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 1200px) {
+    .popup-content2 {
+        width: 80%;
+    }
     .main-box {
         flex-wrap: wrap;
         justify-content: center;
@@ -533,6 +795,13 @@ footer .wrapper {
     .main-card {
         border: 2px solid #0047F5;
         min-width: 185px;
+    }
+    .popup-content {
+        width: 80%;
+        padding-left: 18px;
+    }
+    .popup-visible {
+        padding-right: 9px;
     }
 }
 @media (max-width: 576px) {
@@ -571,6 +840,21 @@ footer .wrapper {
     }
     .main-tittle h2 {
         margin-right: 15px;
+    }
+    #popupForm {
+        padding: 0 16px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    #popupForm input {
+        width: 100%;
+    }
+    .recaptcha {
+        width: 100%;
+    }
+    .thank-you-message {
+        padding: 0 16px;
+        box-sizing: border-box;
     }
 }
 @media (max-width: 450px)  {
