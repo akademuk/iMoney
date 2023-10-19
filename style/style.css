@@ -222,7 +222,7 @@ main {
 }
 .download {
     background: #FED425;
-    height: 90px;
+    height: 80px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -490,7 +490,7 @@ box-sizing: border-box;
     border-radius: 10px;
     bottom: 0;
     border: 2px solid #0047F5;
-    animation: clippath 3s forwards linear;
+    animation: clippath 1.5s forwards linear;
   }
   @keyframes clippath {
     0%
@@ -656,7 +656,9 @@ box-sizing: border-box;
     font-weight: 400;
     line-height: normal;
   }
+
   #popupForm input {
+    transition: all 0.5s;
     width: 314px;
     height: 50px;
     padding-left: 19px;
@@ -665,6 +667,10 @@ box-sizing: border-box;
     background: #FFF;
     border: none;
     margin-bottom: 20px;
+  }
+  #popupForm input:hover {
+    background: #FED425 !important;
+    transition: all 0.5s;
   }
   .recaptcha {
     width: 314px;
@@ -819,6 +825,9 @@ box-sizing: border-box;
 @media (max-width: 768px) {
     main {
         padding: 0 16px 65px 16px
+    }
+    .main-card {
+        height: auto;
     }
 } 
 @media (max-width: 576px) {
