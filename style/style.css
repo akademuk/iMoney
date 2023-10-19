@@ -183,6 +183,7 @@ main {
     letter-spacing: 0.8px;
 }
 .main-content button {
+    font-family: 'Mulish', sans-serif;
     width: 100%;
     color: #FFF;
     text-align: center;
@@ -196,6 +197,9 @@ main {
     border: none;
     margin-bottom: 8px;
     transition: all 0.5s;
+}
+.main-card-img {
+    height: 52px;
 }
 .main-content button:hover {
     background: #FED425;
@@ -836,8 +840,8 @@ box-sizing: border-box;
         padding-right: 15px;
     }
     .main-card {
-        min-width: 185px;
-        width: 45%;
+        width: 48%;
+        min-width: auto;
     }
     .footer-top {
         flex-wrap: wrap;
@@ -886,11 +890,8 @@ box-sizing: border-box;
         width: 100%;
         gap: 6px;
     }
-    .main-card {
-        width: 185px;
-    }
     .main-content {
-        padding: 26px 13px 17px 13px;
+        padding: 8px 8px 17px 8px;
     }
     .main-card-price {
         padding: 0;
@@ -898,16 +899,33 @@ box-sizing: border-box;
     .main-card-price-section p {
         line-height: normal;
     }
+    .main-card-tittle p {
+        font-size: 20px;
+    }
+    .main-card-price-section {
+  flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .offer {
+        height: auto;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 20px;
+        box-sizing: border-box;
+    }
 }
 @media (max-width: 412px)  {
-    .main-card {
-        width: 100%;
-    }
+
     .form-input {
         max-width: 245px;
         width: 100%;
     }
-    .main-box {
+}
+@media (max-width:300px) {
+    .main-card {
         width: 100%;
     }
 }
