@@ -856,7 +856,7 @@ box-sizing: border-box;
         padding-right: 15px;
     }
     .main-card-img img {
-        object-fit: contain;
+        object-fit: cover;
     }
     .main-card-img {
         height: 72px;
