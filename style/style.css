@@ -859,8 +859,9 @@ box-sizing: border-box;
         object-fit: contain;
     }
     .main-card {
-        width: 48%;
-        min-width: auto;
+        max-width: 259px;
+        width: 100%;
+        min-width: 185px;
     }
 
     .footer-top {
@@ -935,6 +936,13 @@ box-sizing: border-box;
         align-items: center;
         padding: 5px 20px;
         box-sizing: border-box;
+    }
+}
+@media (max-width: 553px) {
+    .main-card {
+        width: 48%;
+        max-width: max-content;
+    min-width: auto;
     }
 }
 @media (max-width: 412px)  {
