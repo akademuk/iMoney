@@ -178,7 +178,7 @@ main {
     text-align: right;
     font-size: 12px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     line-height: normal;
     letter-spacing: 0.8px;
 }
@@ -856,6 +856,24 @@ box-sizing: border-box;
         width: 100%;
         min-width: 185px;
     }
+    .main-content button {
+        margin-bottom: 10px;
+    }
+    .star {
+        margin-bottom: 7px;
+    }
+    .main-card-tittle {
+        margin-bottom: 8px;
+    }
+    .main-card-price {
+        margin-bottom: 0px;
+    }
+    .main-card-price-section {
+        margin-bottom: 4px;
+    }
+    .main-card-price-section:nth-last-of-type(1) {
+        margin-bottom: 7px;
+    }
 
     .footer-top {
         flex-wrap: wrap;
@@ -916,12 +934,6 @@ box-sizing: border-box;
     .main-card-tittle p {
         font-size: 20px;
     }
-    .main-card-price-section {
-  flex-direction: column;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-    }
     .offer {
         height: auto;
         width: 100%;
@@ -930,19 +942,27 @@ box-sizing: border-box;
         padding: 5px 20px;
         box-sizing: border-box;
     }
+    .download {
+        height: 40px;
+        font-size: 14px;
+    }
 }
 @media (max-width: 553px) {
     .main-card {
         width: 48%;
         max-width: max-content;
-    min-width: auto;
     }
 }
-@media (max-width: 412px)  {
-
+@media (max-width: 411px)  {
     .form-input {
         max-width: 245px;
         width: 100%;
+    }
+     .main-card-price-section {
+  flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
     }
 }
 @media (max-width:300px) {
