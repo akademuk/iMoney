@@ -850,16 +850,13 @@ box-sizing: border-box;
 }
 
 } 
-@media (max-width: 576px) {
+@media (max-width: 767px) {
     main {
         padding-left: 15px;
         padding-right: 15px;
     }
     .main-card-img img {
         object-fit: cover;
-    }
-    .main-card-img {
-        height: 72px;
     }
     .main-card {
         width: 48%;
@@ -945,6 +942,9 @@ box-sizing: border-box;
     .form-input {
         max-width: 245px;
         width: 100%;
+    }
+    .main-card-img {
+        height: 72px;
     }
 }
 @media (max-width:300px) {
