@@ -959,14 +959,18 @@ box-sizing: border-box;
         width: 100%;
     }
      .main-card-price-section {
-  flex-direction: column;
+        flex-direction: column;
         width: 100%;
         align-items: center;
         justify-content: center;
     }
+    .main-card {
+            min-width: 142px;
+    }
 }
-@media (max-width:300px) {
+@media (max-width:319px) {
     .main-card {
         width: 100%;
+        min-width: 100%;
     }
 }
