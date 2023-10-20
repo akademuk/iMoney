@@ -846,7 +846,7 @@ box-sizing: border-box;
         height: auto;
     }
     .main-card-img {
-    height: 90px;
+    height: 99px;
 }
 
 } 
@@ -857,6 +857,9 @@ box-sizing: border-box;
     }
     .main-card-img img {
         object-fit: contain;
+    }
+    .main-card-img {
+        height: 72px;
     }
     .main-card {
         width: 48%;
