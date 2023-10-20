@@ -856,7 +856,7 @@ box-sizing: border-box;
         padding-right: 15px;
     }
     .main-card-img img {
-        object-fit: cover;
+        object-fit: contain;
     }
     .main-card {
         width: 48%;
@@ -944,7 +944,7 @@ box-sizing: border-box;
         width: 100%;
     }
     .main-card-img {
-        height: 72px;
+        height: auto;
     }
     .main-card {
         width: 100%;
