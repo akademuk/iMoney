@@ -1,6 +1,6 @@
 .rating {
     display: flex;
-    width: 86px;
+    width: auto;
     height: 15px;
     margin-left: -10px;
     gap: 3px;
@@ -117,8 +117,11 @@ main {
     height: 100%;
     object-fit: contain;
 }
+.main-container {
+    margin-bottom: 36px;
+}
 .main-content {
-    padding: 26px 16px 17px 13px;
+    padding: 6px 16px 17px 13px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -750,6 +753,189 @@ box-sizing: border-box;
     font-weight: 400;
     line-height: normal;
   }
+  .main-content-price {
+    display: flex;
+    align-items: center;
+    color: #000;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 3px;
+  }
+  .main-content-price span {
+    color: #0047F5;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .main-content-price1 {
+    margin-right: 5px;
+  }
+  .main-content-price-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 30px;
+    box-sizing: border-box;
+    margin-bottom: 7px;
+  }
+  .main-content-price-link a {
+    color: #5E5C5C;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+  }
+  .main-content-present {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .main-content-present-tittle {
+    color: #000;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 3px;
+  }
+  .main-content-present-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .main-content-present-text div {
+    color: #000;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 3px;
+  }
+  .main-content-present-text div span {
+    color: #0047F5;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+.jq-star {
+    cursor: pointer;
+    z-index: 99;
+    position: relative;
+    margin-right: 3px;
+}
+.jq-star:nth-last-of-type(1) {
+    margin-right: 0;
+}
+.creditor-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.creditor-card{
+    width: 551px;
+    height: 570px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: #F3F6FF;
+    box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 20px 32px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+.creditor-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #B4B4B4;
+    margin-bottom: 20px;
+}
+.creditor-header h2 {
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.creditor-main-top h3 {
+    color: #686868;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration-line: underline;
+    margin-bottom: 17px;
+}
+.card-container-left {
+    width: 151px;
+    min-width: 151px;
+    color: #686868;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.card-container {
+    display: flex;
+    margin-bottom: 8px;
+    gap: 28px;
+    min-height: 22px;
+}
+.card-container-right {
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.card-container-right a {
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none;
+}
+.creditor-main-top {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #B4B4B4;
+    margin-bottom: 28px;
+}
+.card-container2 {
+    margin-bottom: 28px;
+}
+.footer-top-left-img .logo a {
+    color: #C0C0C0;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -785,6 +971,24 @@ box-sizing: border-box;
     }
     .main-card:hover::after {
         content: none;
+    }
+    .card-container-left {
+        width: 100px;
+        min-width: 100px;
+    }
+    .card-container2 {
+        margin-bottom: 8px;
+    }
+    .card-container-right a {
+        word-break: break-all;
+    }
+    .main-content-price-link {
+        padding: 0;
+    }
+    .creditor-card {
+        width: 100%;
+        height: auto;
+        padding: 20px 16px;
     }
     .main-box {
         width: 546px;
@@ -1029,6 +1233,11 @@ box-sizing: border-box;
     }
     .footer-content {
         margin-bottom: 0;
+    }
+}
+@media (max-width:350px) {
+    .main-content-price {
+        font-size: 8px;
     }
 }
 @media (max-width:319px) {
